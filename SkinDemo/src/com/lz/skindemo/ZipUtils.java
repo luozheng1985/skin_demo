@@ -20,6 +20,7 @@ import java.util.zip.ZipOutputStream;
 
 /**
  * Java utils 实现的Zip工具
+ * 解压缩工具
  */
 public class ZipUtils {
 	private static final int BUFF_SIZE = 1024 * 1024; // 1M Byte
@@ -40,8 +41,9 @@ public class ZipUtils {
 
 	/**
 	 * 批量压缩文件（夹）
-	 * @param resFileList  要压缩的文件（夹）列表
-	 * @param zipFile 生成的压缩文件
+	 * 
+	 * @param resFileList 要压缩的文件（夹）列表
+	 * @param zipFile  生成的压缩文件
 	 * @param comment 压缩文件的注释
 	 * @throws IOException 当压缩过程出错时抛出
 	 */
@@ -95,7 +97,7 @@ public class ZipUtils {
 	 * 
 	 * @param zipFile 压缩文件
 	 * @param folderPath 目标文件夹
-	 * @param nameContains  传入的文件匹配名
+	 * @param nameContains 传入的文件匹配名
 	 * @throws ZipException 压缩格式有误时抛出
 	 * @throws IOException IO错误时抛出
 	 */
