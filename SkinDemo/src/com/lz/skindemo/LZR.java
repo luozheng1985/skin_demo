@@ -30,6 +30,10 @@ public class LZR {
         context = null;
     }
     
+    /**
+     * 对资源文件进行解压操作
+     * @param path
+     */
     public static void skinFileHandler(String path){
         skinFils.clear();
         // 首先是遍历某指定路径，找出所有皮肤的压缩包
@@ -58,14 +62,12 @@ public class LZR {
     }
     
     /**
-     * 设置控件的背景资源
+     * 设置控件的背景资源（有点击效果的）
      * 
      * @param view 控件
      * @param res 资源名字
      * @param res_normal 有按下效果时正常资源
      * @param res_press 有按下效果时按下资源
-     * 
-     * @author 罗正
      */
     public static void setViewBackGroundRes(View view ,String res,String res_normal,String res_press){
         if(choosedSkinPath == null){// 使用默认资源
@@ -103,6 +105,11 @@ public class LZR {
         }
     }
     
+    /**
+     * 给控件设置背景资源（无点击效果）
+     * @param view
+     * @param res
+     */
     private static void setViewBackGroundRes(View view ,String res){
         /**
          * 关于getIdentifier方法，官方解释：
@@ -117,30 +124,5 @@ public class LZR {
             view.setBackgroundDrawable(image);
         }
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
 
 }
