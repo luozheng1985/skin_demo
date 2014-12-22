@@ -20,6 +20,7 @@ public class MainActivity extends Activity implements OnClickListener{
         
         setContentView(R.layout.activity_main);
         
+        // 对资源文件进行解压操作
         LZR.skinFileHandler(LZR.SDCARDROOT);
         
         ll = (LinearLayout) findViewById(R.id.ll_main);
@@ -77,6 +78,9 @@ public class MainActivity extends Activity implements OnClickListener{
         }
     }
 
+    /**
+     * 为UI控件设置背景资源
+     */
     private void setSkin(){
         LZR.setViewBackGroundRes(ll,"bg.png",null,null);
         LZR.setViewBackGroundRes(btn_f,"f.xml","f_up.png","f_down.png");
@@ -94,7 +98,10 @@ public class MainActivity extends Activity implements OnClickListener{
         clearCache(btn_g);
         clearCache(btn_n);
     }
-    
+    /**
+     * 对View进行资源清空操作
+     * @param v
+     */
     private void clearCache(View v){
         Drawable dw =  v.getBackground();
         if(dw instanceof BitmapDrawable){
