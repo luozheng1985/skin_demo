@@ -9,7 +9,10 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.LinearLayout;
-
+/**
+ * 这是换皮肤的一种方式，通过把资源文件压缩成ZIP包放置到SDCARD中，程序来动态获取
+ * @author Admin
+ */
 public class MainActivity extends Activity implements OnClickListener{
 
     private Button button1,button2,button3,btn_f,btn_g,btn_n;
