@@ -14,7 +14,4 @@ public class LZApplication extends Application {
         //skinCacheDir = String.format("/data/data/%1$s/skin/",getPackageName());
         
     }
-    
-    
-    
 }

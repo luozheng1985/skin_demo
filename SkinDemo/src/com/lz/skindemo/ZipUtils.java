@@ -143,14 +143,10 @@ public class ZipUtils {
 
 	/**
 	 * 获得压缩文件内文件列表
-	 * 
-	 * @param zipFile
-	 *            压缩文件
+	 * @param zipFile 压缩文件
 	 * @return 压缩文件内文件名称
-	 * @throws ZipException
-	 *             压缩文件格式有误时抛出
-	 * @throws IOException
-	 *             当解压缩过程出错时抛出
+	 * @throws ZipException 压缩文件格式有误时抛出
+	 * @throws IOException 当解压缩过程出错时抛出
 	 */
 	public static ArrayList<String> getEntriesNames(File zipFile) throws ZipException, IOException {
 		ArrayList<String> entryNames = new ArrayList<String>();
@@ -164,14 +160,10 @@ public class ZipUtils {
 
 	/**
 	 * 获得压缩文件内压缩文件对象以取得其属性
-	 * 
-	 * @param zipFile
-	 *            压缩文件
+	 * @param zipFile 压缩文件
 	 * @return 返回一个压缩文件列表
-	 * @throws ZipException
-	 *             压缩文件格式有误时抛出
-	 * @throws IOException
-	 *             IO操作有误时抛出
+	 * @throws ZipException 压缩文件格式有误时抛出
+	 * @throws IOException IO操作有误时抛出
 	 */
 	public static Enumeration<?> getEntriesEnumeration(File zipFile) throws ZipException, IOException {
 		ZipFile zf = new ZipFile(zipFile);
@@ -182,8 +174,7 @@ public class ZipUtils {
 	/**
 	 * 取得压缩文件对象的注释
 	 * 
-	 * @param entry
-	 *            压缩文件对象
+	 * @param entry 压缩文件对象
 	 * @return 压缩文件对象的注释
 	 * @throws UnsupportedEncodingException
 	 */
@@ -194,8 +185,7 @@ public class ZipUtils {
 	/**
 	 * 取得压缩文件对象的名称
 	 * 
-	 * @param entry
-	 *            压缩文件对象
+	 * @param entry  压缩文件对象
 	 * @return 压缩文件对象的名称
 	 * @throws UnsupportedEncodingException
 	 */
@@ -205,17 +195,11 @@ public class ZipUtils {
 
 	/**
 	 * 压缩文件
-	 * 
-	 * @param resFile
-	 *            需要压缩的文件（夹）
-	 * @param zipout
-	 *            压缩的目的文件
-	 * @param rootpath
-	 *            压缩的文件路径
-	 * @throws FileNotFoundException
-	 *             找不到文件时抛出
-	 * @throws IOException
-	 *             当压缩过程出错时抛出
+	 * @param resFile 需要压缩的文件（夹）
+	 * @param zipout 压缩的目的文件
+	 * @param rootpath 压缩的文件路径
+	 * @throws FileNotFoundException 找不到文件时抛出
+	 * @throws IOException 当压缩过程出错时抛出
 	 */
 	private static void zipFile(File resFile, ZipOutputStream zipout, String rootpath) throws FileNotFoundException,
 			IOException {
