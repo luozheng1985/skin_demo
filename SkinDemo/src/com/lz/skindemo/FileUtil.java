@@ -8,7 +8,6 @@ public class FileUtil {
 
     /**
      * 到指定路径下获取皮肤资源
-     * 
      * @param path zip文件所在路径
      * @return
      */
@@ -27,8 +26,4 @@ public class FileUtil {
         }
         return zipFiles;
     }
-    
-    
-    
-    
 }
