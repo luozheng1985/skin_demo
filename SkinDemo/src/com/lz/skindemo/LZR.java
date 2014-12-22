@@ -2,7 +2,6 @@ package com.lz.skindemo;
 
 import java.io.File;
 import java.io.IOException;
-import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.zip.ZipException;
@@ -17,7 +16,6 @@ import android.os.Environment;
 import android.view.View;
 
 public class LZR {
-    
     public static List<String> skinFils = new ArrayList<String>();;
     public static final String SDCARDROOT = Environment.getExternalStorageDirectory().getAbsolutePath();
     public static String skinCacheDir = SDCARDROOT;
@@ -25,6 +23,9 @@ public class LZR {
     public static Context context;
     public static String packageName;
     
+    /**
+     * Çå¿ÕÊý¾Ý
+     */
     public static void clearData(){
         choosedSkinPath = null;
         context = null;
